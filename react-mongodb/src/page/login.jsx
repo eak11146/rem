@@ -60,7 +60,7 @@ const Login = ()  => {
         console.log(error)
          if (semail !='' && spassword !='' ) { 
           // Signed in 
-          const response = await api.post('/login', {
+          const response = await api.post('api/login', {
             name: this.username,
             password: this.password,
           });
