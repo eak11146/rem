@@ -6,8 +6,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ParallaxProvider>
-
+    <ParallaxProvider> 
     <App />
     </ParallaxProvider>
   </StrictMode>,

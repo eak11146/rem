@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
         fontFamily:{
-          "prompt" : ['Prompt', 'serif']
+          "Kanit" : ['Kanit', 'serif'],
+          "Pattaya" :["Pattaya", 'serif'],
         }
     },
   },

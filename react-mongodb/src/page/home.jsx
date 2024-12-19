@@ -1,7 +1,9 @@
 import React,{ useRef } from 'react'
  
 import mernLogo from '../assets/mernstack.png'
-import imageMid from '../assets/images/parallax-demon-woods-mid-trees.png';
+ 
+import ParallaxText from '../component/ParallaxText';
+import SkillComp from '../component/SkillComp';
 
 
 const Home = () => {
@@ -9,24 +11,24 @@ const Home = () => {
    
   return (
     <>
-    <div className='container mx-auto justify-center md:h-[unset] md:max-w-[95%] lg:h-[100vh] lg:max-w-[70%] p-3'>
-       <h1 className="text-3xl text-green-me font-normal">
-       Hi There, I'm  Eakawee
-    </h1> 
-    <h2>
-      Web Developer & Designer
-    </h2>    
-    <div className='bg-green-css rounded-xl  border-2 justify-items-center p-3'>
-      <p className='my-3'>
-      I'm a passionate web developer with expertise in React, Next.js, PHP ,CSS HTML JQUERY and Nodejs mysql mongodb ..., and modern web technologies. I love creating beautiful and functional website that solve real world problems.
-      </p>
-      
+    <div className='container mx-auto  md:h-[unset] md:max-w-[95%] lg:h-[100vh] lg:max-w-[70%] p-3'>
+   
+   <div className="h-[250px] flex-col items-center justify-center p-36">
+      <h1 className="font-Pattaya text-5xl text-green-me font-semibold text-center ">
+              Hi There, I'm  Eakawee
+      </h1>  
+      <h2 className="font-Pattaya text-xl text-white font-normal text-center  my-3">
+        Web Developer & Designer
+      </h2>  
+   </div>
+       
+ 
+    <ParallaxText />  
+    <div className=''>
+    <img src={ mernLogo } style={{ height:'60px'}} className='mx-auto '/>
     </div>
-    
-
-    <div className='grid justify-items-center w-full my-3'>
-      <img src={ mernLogo } style={{ height:'60px'}} className=''/>
-    </div>
+       
+     <SkillComp />
  
 
     </div>
