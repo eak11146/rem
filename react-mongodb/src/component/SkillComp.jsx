@@ -10,12 +10,23 @@ import NodeLogo from '../assets/images/NodeLogo.png'
 import Mongodb from '../assets/images/mongodb.svg'
 import Express from '../assets/images/Express.png'
 import NextJs from '../assets/images/NextJs.png'
-
+import { useParallax  } from 'react-scroll-parallax';
 
 const SkillComp = () => {
+
+
+  const parallax = useParallax({
+           translateX: [-100, 0], // Moves element from 0px to 50px on scroll
+          scale: [0.51, 1, 'easeOutCubic'],    // Scales the element from 1 to 1.2
+          shouldAlwaysCompleteAnimation: true,
+          opacity: [0.5, 1],  // Fades out the element
+        });
+   
+
+
   return (
     <>
-      <div className=' rounded-xl border-2 border-green-400 shadow-lg shadow-green-200 my-5 p-5'>
+      <div ref={parallax.ref} className=' rounded-xl border-2 border-green-400 shadow-lg shadow-green-200 my-5 p-5'>
 
 
         <h3 className='text-center text-2xl font-semibold text-white my-5'>Skills & Expertise</h3>
@@ -60,9 +71,9 @@ const SkillComp = () => {
             <img src={Express} alt="" className='w-10' />
             <span className='text-green-me'>Express Js</span>
           </div>
-          <div className='border border-green-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-green-300'>
+          <div className='border bg-white border-green-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-green-300'>
             <img src={NextJs} alt="" className='w-9' />
-            <span className='text-green-me'>Next Js</span>
+            <span className=''>Next Js</span>
           </div>
         </div>
 

@@ -6,13 +6,13 @@ const ParallaxText = () => {
         translateY: [0, 50], // Moves element from 0px to 50px on scroll
         scale: [0.51, 1, 'easeOutCubic'],    // Scales the element from 1 to 1.2
         shouldAlwaysCompleteAnimation: true,
-        opacity: [0.5, 1],  // Fades out the element
+        opacity: [0.0, 1],  // Fades out the element
       });
  
       
   return (
     <>
-       <div ref={parallax.ref} style={{ marginBottom: "80px"  }}  
+       <div ref={parallax.ref} style={{ marginBottom: "100px"  }}  
        className=' flex-row items-center justify-items-center'
        >    
             <div className='bg-green-css rounded-xl  border-2 shadow-lg shadow-green-200   p-3'>

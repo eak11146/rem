@@ -25,7 +25,7 @@ const Home = () => {
  
     <ParallaxText />  
     <div className=''>
-    <img src={ mernLogo } style={{ height:'60px'}} className='mx-auto '/>
+    <img src={ mernLogo } style={{ height:'70px'}} className='mx-auto  my-10 '/>
     </div>
        
      <SkillComp />
