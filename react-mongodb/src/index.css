@@ -125,14 +125,24 @@ body{
     padding:15px;
     color: #000;
     border-radius: 30px;
-    background-color: yellowgreen;
+    background-color: #66ff00;
   }
   .btn:hover{
-    color: yellowgreen;
+    color: 66ff00;
     background-color: #EFEFEF;
-    border:1px solid yellowgreen;
+    border:1px solid #66ff00;
   }
   .checkspan {
     color: red;
     margin: 15px 0px 15px;
   }
+
+
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2;
+    -webkit-box-orient: vertical;
+ }
