@@ -29,9 +29,9 @@ const Signup = () => {
 
   return (
     <>
-     <div className='container mx-auto justify-center md:max-w-[95%] lg:max-w-[70%] p-3 '>
+     <div className='container  mx-auto  justify-center md:max-w-[95%] lg:max-w-[70%] p-3 '>
      <h2 className="py-3">Register</h2>
-    <form onSubmit={register}>
+    <form onSubmit={register}  className='w-[300px]'>
       <input 
        type="email"
        value={email}

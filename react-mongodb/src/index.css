@@ -4,16 +4,23 @@
 .logo{
     display:inline;
 }
+
+.logo img {
+  height: 40px;
+ 
+}
 .navbar {
     height: 60px;
-    background-color: #FFF; /* background */
+    background-color: #000; /* background */
     position: relative;
   }
   
   
   .menu-icon {
     display: none;
+    color: #66ff00;
   }
+
   
     
   .nav-elements ul {
@@ -29,9 +36,10 @@
   .nav-elements ul a {
     font-size: 1rem;
     font-weight: 400;
-    color: #000;
+    color: #fff;
     text-decoration: none;
   }
+
   
   .nav-elements ul a.active {
     color: #574c4c;
@@ -65,12 +73,12 @@
       position: absolute;
       right: 0;
       top: 60px;
-      background-color: #EEE;
+      background-color: #000;
       width: 0px;
       height: calc(100vh - 60px);
       transition: all 0.3s ease-in;
       overflow: hidden;
-       
+       /* bg mobile */
     }
   
     .nav-elements.active {

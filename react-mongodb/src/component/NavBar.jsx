@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
- 
+import mainLogo from '../assets/logo-me.png' 
+
 function NavBar() {
 
   const [showNavbar, setShowNavbar] = React.useState(false);
@@ -12,16 +13,17 @@ function NavBar() {
   return (
     
     <>
-    <nav className="navbar">
+    <nav className="navbar " style={{ maxHeight:'60px'}} >
       <div className="container  mx-auto justify-center   md:max-w-[95%]  lg:max-w-[70%] p-3">
 
      <div className='flex justify-between'> 
 
         <div className="logo"> 
          <a href="/" >
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+           {/*  <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white" style={{maxHeight:'70px'}} className='max-h-[50px]' >
               Logo
-            </span>
+            </span>  */}
+            <img src={mainLogo} className='w-full h-auto'   />
           </a>
         </div> 
 
@@ -49,8 +51,8 @@ function NavBar() {
               <Link to="/contact">Contact</Link>
             </li>
             
-          </ul>
-          <ul style={{ paddingLeft:'30px'}}>
+          {/* </ul>
+          <ul style={{ paddingLeft:'0px'}}> */}
             <li><Link to='/login'>Login</Link></li>
             <li><Link to='/signup'>Signup</Link></li>
           </ul>
