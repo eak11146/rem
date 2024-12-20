@@ -16,7 +16,7 @@ const ParallaxText = () => {
        className=' flex-row items-center justify-items-center'
        >    
             <div className='bg-green-css rounded-xl text-center  border-2 shadow-lg shadow-green-200   p-5'>
-                <h3 className='text-md leading-8'>
+                <h3 className='text-xl leading-8'>
                 I'm a passionate web developer with expertise in React, Next.js, PHP ,CSS HTML JQUERY and Nodejs mysql mongodb ...And modern web technologies. I love creating beautiful and functional website that solve real world problems.
                 </h3>
                 

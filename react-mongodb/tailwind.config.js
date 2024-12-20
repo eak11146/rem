@@ -9,6 +9,9 @@ export default {
         fontFamily:{
           "Kanit" : ['Kanit', 'serif'],
           "Pattaya" :["Pattaya", 'serif'],
+        },
+        gridAutoColumns: {
+          '2fr': 'minmax(0, 2fr)',
         }
     },
   },
